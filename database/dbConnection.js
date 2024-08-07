@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 export const dbConnection = () => {
+  const URL=`mongodb+srv://newuser20:test321@cluster0.brtlu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
   mongoose
-    .connect("mongodb+srv://mithileshporate21:CqyIESH6Uu3PwLW5@cluster0.brtlu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+    .connect(URL,{
       dbName: "NGO_Database",
     })
     .then(() => {
